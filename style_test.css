@@ -1,0 +1,383 @@
+@import url('components/tweets.css');
+@import url('components/banner.style.css');
+@import url('components/home.style.css');
+@import url('components/suggestions.style.css');
+@import url('components/newtweet.style.css');
+@import url('components/recenttweets.style.css');
+@import url('components/tags.css');
+/* @import url('components/inscription.style.css'); */
+
+@import "~rfs/scss";
+
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: ease-in-out 1s;
+}
+
+
+.none{
+    display: none;
+}
+
+/*----------- BODY -----------*/
+
+body{
+    background-color:rgb(27, 26, 26);
+}
+
+/*----------- FORMULAIRE NEW POST -----------*/
+
+.formulaire {
+    width: 40%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.formulaire input{
+    width: 100%;
+    height: 120%;
+}
+
+.formulaire button{
+    width: 40%;
+    align-self: center;
+}
+
+/*----------- NEW POST -----------*/
+
+.Modale {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    position: fixed;
+    width: 90%;
+    height: 90%;
+    background-color: black;
+    top: -95%;
+    left: 5%;
+    opacity: 90%;
+    border-radius: 10px;
+    z-index: 5;
+    flex-direction: column;
+
+}
+
+.close {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+
+}
+
+/* ----------- TAGS ----------- */
+
+.hashtags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4vw;
+    margin-top: 5vw;
+}
+
+.tag {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1vw;
+    gap: 1.5vw;
+}
+
+/* ----------------------- BANNIERE -----------------------*/
+
+/* .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    background-color: rgb(27, 26, 26);
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+} */
+
+/* .images {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 10vw;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+}
+
+.imglogo {
+    display: flex;
+    position: relative;
+    clip-path: ellipse(50% 50%);
+    width: 15%;
+    width: 4.5vw;
+    height: 4.5vw;
+    animation: tourne 7s linear infinite;
+}
+
+@keyframes tourne {
+
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+} */
+
+/* .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3vw;
+    padding-bottom: 2.5vw;
+    height: 10px;
+    width: 100%;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+.imglink {
+    width: 3.2vw;
+    height: 3.2vw;
+    position: relative;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+} */
+
+/* .imglink:hover {
+    scale: 1.5;
+}
+
+.rond {
+    display: flex;
+    position: relative;
+    clip-path: ellipse(50% 50%);
+    width: 15%;
+    width: 5vw;
+    height: 5vw;
+} */
+
+/* ----------------------- MAIN PAGE -----------------------*/
+
+.mainpage {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 2vw;
+}
+
+.main {
+    background-color: rgb(153, 111, 6);
+    display: flex;
+    height: 100%;
+}
+
+/* ----------------------- DIVISION HOME -----------------------*/
+
+/* .home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(27, 26, 26);
+    border-bottom: 1px solid grey;
+    height: 8vw;
+    width: 100%;
+} */
+
+/* .accueil {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    color: white;
+    font-size: 2.5vw;
+}
+
+.page {
+    display: flex;
+    position: relative;
+    border-bottom: 6px solid rgb(220, 115, 10);
+    color: white;
+    font-size: 2vw;
+    height: 100%;
+}
+
+.autre {
+    display: flex;
+    position: relative;
+    color: white;
+    font-size: 2vw;
+    height: 100%;
+} */
+
+/* ----------------------- DIVISION NEWTWEETS -----------------------*/
+
+/* .newtweet {
+    background-color: rgb(27, 26, 26);
+    border-bottom: 1px solid grey;
+    height: 250%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+} */
+
+/*----------- DIVISION CENTRE NEW -----------*/
+
+/* .new{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+/*----------- PROFIL PICTURE -----------*/
+
+/* .cercle {
+    display: flex;
+    position: relative;
+    clip-path: ellipse(50% 50%);
+    left: 0%;
+    COMM scale: 0.5;
+    align-self: center;
+    width: 5vw;
+    height: 5vw;
+} */
+
+/*----------- NOUVEAU POST -----------*/
+
+/* .question {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 2.3vw;
+    margin-top: 0.5vw;
+    flex-direction: column;
+} */
+
+/*----------- IMAGES -----------*/
+
+/* .post {
+    width: 2vw;
+    height: 2vw;
+    position: relative;
+    margin-top: 3vw;
+    COMM transition: ease-in-out .5s;
+} */
+
+/*----------- BOUTON POST -----------*/
+
+/* .BoutonDiv{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 25%;
+} */
+
+/* .BoutonDiv button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(193, 99, 5);
+    position: relative;
+    font-size: 25px;
+    border-radius: 0.5em;
+    top: 4vw;
+    height: 3vw; RECIZE BOUTON
+    width: 7vw;
+} */
+
+/* .BoutonDiv button:hover {
+    background-color:#6b31bb;
+    transition: 0.7s;
+} */
+
+/* ----------------------- DIVISION RECENT TWEETS -----------------------*/
+
+.recenttweet {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(27, 26, 26);
+    overflow-y: scroll;
+    height: 60vh;
+}
+
+.tweets {
+    width: 90%;
+}
+
+.Part1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.HomeButtons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50%;
+}
+
+
+
+/* button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(193, 99, 5);
+    position: relative;
+    border-radius: 2em;
+    top: 4vw;
+    margin-top: 50%;
+    height: 3vw; recize le bouton
+    width: 7vw;
+} */
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .suggestions{
+        position: fixed;
+        right: -50%;
+    }
+    .tweets{
+        width: 100%;
+    }
+    .cercle{
+        display: flex;
+        position: relative;
+        clip-path: ellipse(50% 50%);
+        scale: 1;
+        align-self: center;
+        height: 5vw;
+    }
+    .newtweet{
+        height: 60%;
+    }
+    .page {
+        border-bottom: 1px solid rgb(220, 115, 10);
+    }
+}

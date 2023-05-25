@@ -1,0 +1,104 @@
+/*----------- DIVISION NEWTWEETS -----------*/
+
+.newtweet {
+    background-color: rgb(27, 26, 26);
+    border-bottom: 1px solid grey;
+    height: 250%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+/*----------- DIVISION CENTRE NEW -----------*/
+
+.new{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*----------- PROFIL PICTURE -----------*/
+
+.cercle {
+    display: flex;
+    position: relative;
+    clip-path: ellipse(50% 50%);
+    left: 0%;
+    /*COMM scale: 0.5;*/
+    align-self: center;
+    width: 5vw;
+    height: 5vw;
+}
+
+/* .buttonPost {
+    margin-top: 2vw;
+    margin-left: 20vw;
+} */
+
+/*----------- NOUVEAU POST -----------*/
+
+.question {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 2.3vw;
+    margin-top: 0.5vw;
+    flex-direction: column;
+}
+
+/*----------- IMAGES -----------*/
+
+.post {
+    width: 2vw;
+    height: 2vw;
+    position: relative;
+    margin-top: 3vw;
+    /*COMM transition: ease-in-out .5s;*/
+}
+
+.post:hover{
+    filter: brightness(50%);
+}
+
+/*----------- BOUTON POST -----------*/
+
+.BoutonDiv{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 25%;
+}
+
+.BoutonDiv button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(193, 99, 5);
+    position: relative;
+    font-size: 25px;
+    border-radius: 0.5em;
+    top: 4vw;
+    height: 3vw; /*RECIZE BOUTON*/
+    width: 7vw;
+}
+
+.BoutonDiv button:hover {
+    background-color:#6b31bb;
+    transition: 0.7s;
+}
+
+/*button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(193, 99, 5);
+    position: relative;
+    border-radius: 2em;
+    top: 4vw;
+    margin-top: 50%;
+    height: 3vw; recize le bouton
+    width: 7vw;
+}*/

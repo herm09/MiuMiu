@@ -1,0 +1,118 @@
+/* ----------------------- BODY -----------------------*/
+
+body{
+    background-color: rgb(57, 56, 56);
+}
+
+/* ----------------------- TITRE -----------------------*/
+
+.title {
+    color: rgb(214, 214, 214)
+}
+
+/* ----------------------- DIVISION BANNIERE -----------------------*/
+
+header {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(57, 56, 56);
+}  
+
+/* ----------------------- BANNIERE -----------------------*/
+
+.banner {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-bottom: 1px solid grey; */
+    background-color: rgb(57, 56, 56);
+    /* padding-top: 0.5vw; */
+    padding-bottom: 3vw;
+}
+
+/* ----------------------- IMAGES -----------------------*/
+
+.navbar {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.images {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 10vw;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+}
+
+.imglogo {
+    display: flex;
+    position: relative;
+    clip-path: ellipse(50% 50%);
+    width: 15%;
+    width: 3.5vw;
+    height: 3.5vw;
+    animation: tourne 7s linear infinite;
+    margin-left: 2vw;
+}
+
+@keyframes tourne {
+
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rond {
+    display: flex;
+    position: relative;
+    clip-path: ellipse(50% 50%);
+    width: 15%;
+    width: 3.5vw;
+    height: 3.5vw;
+    margin-right: 2vw;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3vw;
+    padding-bottom: 2.5vw;
+    height: 10px;
+    width: 100%;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+.imglink {
+    width: 3.2vw;
+    height: 3.2vw;
+    position: relative;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+.imglink:hover {
+    scale: 1.5;
+}
+

@@ -1,0 +1,53 @@
+/*----------- DIVISION FORM INSCRIPTION -----------*/
+.Title1 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(225, 165, 53);
+    width: 20vw;
+    height: 40px;
+    border-radius: 1em;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    font-size: calc(0.7rem + 1vw);
+    color: black;
+}
+
+.Title2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(0.6rem + 1vw);
+    margin-top: -0.5vw;
+    color: white;
+}
+
+.inscritpion {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 40px;
+    background-color: rgb(209, 164, 80);
+}
+
+.error {
+    color: red;
+    flex-wrap: wrap;
+    font-size: calc(0.3rem + 1vw);
+}
+
+form {
+    display: grid;
+    justify-self: center;
+    justify-content: center;
+    background-color: rgb(200, 163, 215);
+    border-radius: 1em;
+    width: 20vw;
+    padding-bottom: 2vw;
+}
+
+.infos {
+    font-size: calc(0.1rem + 1vw);
+}

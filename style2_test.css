@@ -1,0 +1,19 @@
+@import url('components/inscription.style.css');
+
+/*----------- BODY -----------*/
+
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: ease-in-out 1s;
+}
+
+body{
+    background-color: rgb(47, 45, 45);
+}
+
+main {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
