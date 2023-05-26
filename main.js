@@ -7,6 +7,8 @@ let toggle2 = false; //si toggle2 est faux la fenêtre pour le tweet est fermé
 const Modal = document.querySelector(".Modale");
 const buttonModal = document.querySelector(".close");
 
+
+
 Logo.addEventListener("click", (event) => { //quand on va cliquer sur le logo on va lancer l'évènement click Tout ce qui entre crochet est ce qui va se passer en cliquant
     toggle = !toggle; //interrupteur est égal à son contraire
     if(toggle == false)
@@ -175,3 +177,21 @@ btntemps.addEventListener('click', () => {
         tag.classList.add('tweet1')
     });
 })
+
+
+
+
+// Recupere le input du champ message
+const messageTweet = document.querySelector('.msg')
+
+// Detecter si la valeur du input change. Si oui tu lance une fonction
+messageTweet.addEventListener('input', () => {
+    // Mettre dans le local storage la valeur du input. il  est définit par le nom "message"
+    localStorage.setItem('message', messageTweet.value)
+})
+
+// Dans le localstorage, si la valeur de "message" est différent de rien du tout alors :
+if(localStorage.getItem('message') !== ""){
+    // définir la valeur du input par la valeur de "message" se trouvant dans le localStorage
+    messageTweet.value = localStorage.getItem('message')
+}
