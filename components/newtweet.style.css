@@ -3,10 +3,10 @@
 .newtweet {
     background-color: rgb(27, 26, 26);
     border-bottom: 1px solid grey;
-    height: 250%;
     display: flex;
     justify-content: space-around;
     color: white;
+    padding: 16px;
 }
 
 /*----------- DIVISION CENTRE NEW -----------*/
@@ -53,9 +53,10 @@
 
 .post {
     width: 2vw;
-    height: 2vw;
+    /* height: 2vw; */
     position: relative;
     margin-top: 3vw;
+    font-size: calc(0.6rem + 1vw);
     /*COMM transition: ease-in-out .5s;*/
 }
 
@@ -68,9 +69,17 @@
 .BoutonDiv{
     display: flex;
     justify-content: space-around;
-    height: 100%;
-    width: 25%;
+    font-size: calc(0.2rem + 0.5vw);
+    /* height: 100%; */
+    /* width: 25%; */
 }
+
+.BoutonDiv p {
+    font-size: calc(0.4rem + 1vw);
+    justify-content: space-around;
+    margin: 0;
+}
+
 
 .BoutonDiv button {
     display: flex;
@@ -79,9 +88,9 @@
     background-color: rgb(193, 99, 5);
     position: relative;
     font-size: 25px;
-    border-radius: 0.5em;
+    border-radius: 0.2em;
     top: 4vw;
-    height: 3vw; /*RECIZE BOUTON*/
+    height: 3vw; /*RECIZE BOUTON */
     width: 7vw;
 }
 
